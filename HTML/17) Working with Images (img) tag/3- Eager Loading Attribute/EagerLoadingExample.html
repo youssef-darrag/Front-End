@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading Example</title>
+</head>
+
+<body>
+    <h1>Some Images</h1>
+    <!-- Ensure that critical images that appear above the fold are not lazy-loaded, as this could delay their visibility. -->
+    <img src="Images/1.jpg" alt="The Shawshank Redemption" loading="eager" style="width: 40%; height: auto;">
+
+    <p>Scroll down to see images load as they come into view.</p>
+    <div style="height: 800px;">Scroll down</div>
+
+    <br>
+    <img src="Images/2.jpg" alt="The Godfather" loading="lazy" style="width: 20%; height: auto;">
+    <br>
+    <img src="Images/3.jpg" alt="The Godfather: Part II" loading="lazy" style="width: 20%; height: auto;">
+    <br>
+    <img src="Images/4.jpg" alt="The Dark Knight" loading="lazy" style="width: 20%; height: auto;">
+
+
+    <div style="height: 800px;">Keep scrolling</div>
+    <br>
+    <img src="Images/5.jpg" alt="12 Angry Men" loading="lazy" style="width: 20%; height: auto;">
+    <br>
+    <img src="Images/6.jpg" alt="Schindler's List" loading="lazy" style="width: 10%; height: auto;">
+    <br>
+    <img src="Images/7.jpg" alt="The Lord of the Rings: The Return of the King" loading="lazy" style="width: 10%; height: auto;">
+
+
+    <div style="height: 800px;">Keep scrolling</div>
+    <br>
+    <img src="Images/8.jpg" alt="Pulp Fiction" loading="lazy" style="width: 20%; height: auto;">
+    <img src="Images/9.jpg" alt="The Good, the Bad and the Ugly" loading="lazy" style="width: 20%; height: auto;">
+    <img src="Images/10.jpg" alt="The Lord of the Rings: The Fellowship of the Ring" loading="lazy" style="width: 20%; height: auto;">
+    <img src="Images/11.png" alt="Game" loading="lazy" style="width: 20%; height: auto;">
+    <img src="Images/12.jpg" alt="Game" loading="lazy" style="width: 20%; height: auto;">
+    <img src="Images/13.jpg" alt="Game" loading="lazy" style="width: 20%; height: auto;">
+    <img src="Images/14.jpg" alt="Game" loading="lazy" style="width: 20%; height: auto;">
+</body>
+
+</html>
