@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Example</title>
+</head>
+
+<body>
+    <!-- The <picture> element is used to define container for multiple <source> elements and one <img> element to provide different versions of an image for different display/device scenarios -->
+    <picture>
+        <!-- <source> element for large screens, specifies the image to display when the viewport is 800 pixels or wider -->
+        <source media="(min-width: 800px)" srcset="Images/large-image.jpg">
+
+        <!-- <source> element for medium screens, specifies the image to display when the viewport is at least 450 pixels but less than 800 pixels -->
+        <source media="(min-width: 500px)" srcset="Images/medium-image.jpg">
+
+        <!-- Fallback <img> element that displays if none of the <source> elements match their media conditions -->
+        <!-- This image is also displayed in browsers that do not support the <picture> element -->
+        <img src="Images/small-image.jpg" alt="An example image">
+    </picture>
+</body>
+
+</html>
